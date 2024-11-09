@@ -11,11 +11,12 @@
     <script>
       var text = "";
       var i = 0;
-      while (i < 101) {
-        text = text + "<br>The number is " + i;
+      while (i < 10) {
+        text = text + "<br>The values inside the block: " + i;
         i = i + 1;
+        document.getElementById("number").innerHTML = text;
       }
-      document.getElementById("number").innerHTML = text;
+      document.write("the value of i outside the block is: " + i);
     </script>
   </body>
 </html>
